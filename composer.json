@@ -1,0 +1,7 @@
+{
+  "name": "dumgum/sdk",
+  "version": "1.0.0",
+  "autoload": {
+    "psr-4": {"Dumgum\\": "lib/Dumgum"}
+  }
+}
