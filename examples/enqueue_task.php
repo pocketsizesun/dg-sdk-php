@@ -16,7 +16,7 @@ try {
   $task->setAnimatedProfileId('528');
   $task->setCustomerProfileId('6128');
   $task->setCustomerProfileDistance(28);
-  $task->setPriority(Dumgum\ContentCreation\Task::PRIORITY_INSTANT);
+  $task->setPriority(Dumgum\ContentCreation\Task::PRIORITY_NORMAL);
   $task->setLanguage(Dumgum\ContentCreation\Task::LANGUAGE_FRENCH);
   $task->setMessage($message);
 

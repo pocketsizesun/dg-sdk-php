@@ -5,10 +5,9 @@ namespace Dumgum\ContentCreation;
 class Task {
   const LANGUAGE_FRENCH = 'FR';
 
-  const PRIORITY_LOW = 'low';
-  const PRIORITY_MEDIUM = 'medium';
-  const PRIORITY_HIGH = 'high';
-  const PRIORITY_INSTANT = 'instant';
+  const PRIORITY_NORMAL = 'NORMAL';
+  const PRIORITY_FAST = 'FAST';
+  const PRIORITY_INSTANT = 'INSTANT';
 
   public $animatedProfileId = null;
   public $animatedProfileVersion = null;
@@ -20,7 +19,7 @@ class Task {
   public $language = null;
 
   public function __construct() {
-    $this->priority = self::PRIORITY_LOW;
+    $this->priority = self::PRIORITY_NORMAL;
     $this->language = self::LANGUAGE_FRENCH;
   }
 

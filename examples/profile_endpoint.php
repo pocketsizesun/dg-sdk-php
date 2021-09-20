@@ -17,8 +17,8 @@ $profile->setName('Roger')
         ->setFeature(Dumgum\Profile::FEATURE_WEIGHT, 65)
         ->addPicture('https://www.vettedpetcare.com/vetted-blog/wp-content/uploads/2017/09/How-To-Travel-With-a-Super-Anxious-Cat-square.jpeg');
 
-$profileCustomerEndpointResponse->setProfileTTL(60);
-$profileCustomerEndpointResponse->setProfileVersion('123456789');
+$profileCustomerEndpointResponse->setCacheTTL(60);
+$profileCustomerEndpointResponse->setCacheVersion('123456789');
 $profileCustomerEndpointResponse->setProfile($profile);
 
 echo $profileCustomerEndpointResponse->toJSON();
