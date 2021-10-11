@@ -9,6 +9,7 @@ class Message {
   const TYPE_ACTION_KISS = 'action:kiss';
   const TYPE_ACTION_REQUEST_PICTURE = 'action:request-picture';
   const TYPE_ACTION_FAVORITE = 'action:favorite';
+  const TYPE_CC_PRIVATE_PICTURE = 'cc:PrivatePicture';
 
   public $senderId = null;
   public $type = null;

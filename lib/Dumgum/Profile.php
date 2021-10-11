@@ -10,6 +10,7 @@ class Profile {
   const FEATURE_HAIR_LENGTH = 'hair_length';
   const FEATURE_HEIGHT = 'height';
   const FEATURE_WEIGHT = 'weight';
+  const FEATURE_MARITAL_STATUS = 'marital_status';
 
   const GENDER_MALE = 'male';
   const GENDER_FEMALE = 'female';
@@ -20,6 +21,7 @@ class Profile {
   public $location;
   public $features;
   public $pictures;
+  public $privatePictures;
   public $description;
 
   public function __construct() {
@@ -29,12 +31,14 @@ class Profile {
       'city' => null
     ];
     $this->pictures = [];
+    $this->privatePictures = [];
     $this->features = [
       self::FEATURE_EYES_COLOR => null,
       self::FEATURE_HAIR_COLOR => null,
       self::FEATURE_HAIR_LENGTH => null,
       self::FEATURE_HEIGHT => null,
-      self::FEATURE_WEIGHT => null
+      self::FEATURE_WEIGHT => null,
+      self::FEATURE_MARITAL_STATUS => null
     ];
   }
 
@@ -60,6 +64,10 @@ class Profile {
 
   public function getPictures() {
     return $this->pictures;
+  }
+
+  public function getPrivatePictures() {
+    return $this->privatePictures;
   }
 
   public function getDescription() {
@@ -114,6 +122,15 @@ class Profile {
     return $this;
   }
 
+  /**
+   * Add a private picture URL on Profile
+   * @param string $url
+   */
+  public function addPrivatePicture($url) {
+    array_push($this->privatePictures, $url);
+    return $this;
+  }
+
   public function setDescription($value) {
     $this->description = $value;
     return $this;
@@ -127,6 +144,7 @@ class Profile {
       'location' => $this->getLocation(),
       'features' => $this->getFeatures(),
       'pictures' => $this->getPictures(),
+      'private_pictures' => $this->getPrivatePictures(),
       'description' => $this->getDescription()
     ];
   }
