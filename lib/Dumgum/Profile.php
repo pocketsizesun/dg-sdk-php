@@ -14,6 +14,11 @@ class Profile {
 
   const GENDER_MALE = 'male';
   const GENDER_FEMALE = 'female';
+  const GENDER_COUPLE = 'couple';
+  const GENDER_TRANSGENDER = 'transgender';
+  const GENDER_​TRANSMAN = '​transman';
+  const GENDER_TRANSWOMAN = 'transwoman';
+  const GENDER_​TRANSVESTITE = '​transvestite';
 
   public $name;
   public $birthdate;
