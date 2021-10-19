@@ -21,6 +21,7 @@ class Profile {
   const GENDER_​TRANSVESTITE = '​transvestite';
 
   public $name;
+  public $nickname;
   public $birthdate;
   public $gender;
   public $location;
@@ -49,6 +50,10 @@ class Profile {
 
   public function getName() {
     return $this->name;
+  }
+
+  public function getNickname() {
+    return $this->nickname;
   }
 
   public function getBirthdate() {
@@ -81,6 +86,11 @@ class Profile {
 
   public function setName($value) {
     $this->name = $value;
+    return $this;
+  }
+
+  public function setNickname($value) {
+    $this->nickname = $value;
     return $this;
   }
 
@@ -144,6 +154,7 @@ class Profile {
   public function asJSON() {
     return [
       'name' => $this->getName(),
+      'nickname' => $this->getNickname(),
       'birthdate' => $this->getBirthdate(),
       'gender' => $this->getGender(),
       'location' => $this->getLocation(),
