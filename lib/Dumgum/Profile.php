@@ -11,6 +11,8 @@ class Profile {
   const FEATURE_HEIGHT = 'height';
   const FEATURE_WEIGHT = 'weight';
   const FEATURE_MARITAL_STATUS = 'marital_status';
+  const FEATURE_RELATIONSHIP_STATUS = 'relationship_status';
+  const FEATURE_INTERESTS = 'interests';
 
   const GENDER_MALE = 'male';
   const GENDER_FEMALE = 'female';

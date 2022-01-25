@@ -3,7 +3,8 @@
 namespace Dumgum\ContentCreation;
 
 class Task {
-  const LANGUAGE_FRENCH = 'FR';
+  const LANGUAGE_FRENCH = 'FR'; // default language
+  const LANGUAGE_ENGLISH = 'EN';
 
   const PRIORITY_NORMAL = 'NORMAL';
   const PRIORITY_FAST = 'FAST';

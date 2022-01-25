@@ -15,7 +15,8 @@ $profile->setName('Roger')
         ->setFeature(Dumgum\Profile::FEATURE_HAIR_LENGTH, 'short')
         ->setFeature(Dumgum\Profile::FEATURE_HEIGHT, 170)
         ->setFeature(Dumgum\Profile::FEATURE_WEIGHT, 65)
-        ->setFeature(Dumgum\Profile::FEATURE_MARITAL_STATUS, 'single')
+        ->setFeature(Dumgum\Profile::FEATURE_RELATIONSHIP_STATUS, Dumgum\Profile\Features\RelationshipStatusFeature::COMPLICATED)
+        ->setFeature(Dumgum\Profile::FEATURE_INTERESTS, ['value1', 'value2', 'value3'])
         ->addPicture('https://www.vettedpetcare.com/vetted-blog/wp-content/uploads/2017/09/How-To-Travel-With-a-Super-Anxious-Cat-square.jpeg')
         ->addPrivatePicture('https://www.smithsstationah.com/imagebank/eVetSites/Feline/01.jpg');
 
